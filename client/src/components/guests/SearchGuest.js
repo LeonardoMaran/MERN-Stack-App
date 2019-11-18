@@ -1,5 +1,5 @@
 import React, { useRef, useContext } from 'react'
-import GuestContext from '../../context/guestContext/guestContext'
+import GuestContext from '../../comtext/guestContext/guestContext'
 
 const SearchGuest = () => {
   const { search_Guest, clearSearchGuest } = useContext(GuestContext)
@@ -18,4 +18,4 @@ const SearchGuest = () => {
     </div>
   )
 }
-export default SearchGuesth
+export default SearchGuest

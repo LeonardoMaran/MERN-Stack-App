@@ -24,7 +24,7 @@ const GuestState = (props) => {
     guests: [],
     error: null,
   }
-  const [state, dispatch] = useReducer(guestReducer, intialState)
+  const [state, dispatch] = useReducer(guestReducer, initialState)
 
   // get guests
   const getGuests = async () => {
@@ -158,9 +158,7 @@ const GuestState = (props) => {
       clearSearchGuest,
       getGuests,
       clearGuests
-    }} >
-      {props.children}
-    </GuestContext.Provider >
+    }} > {props.children} </GuestContext.Provider >
   )
 }
 
